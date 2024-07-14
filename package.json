@@ -1,0 +1,13 @@
+{
+  "name": "lambda-invoice",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.12.2",
+    "stripe": "^16.2.0"
+  },
+  "scripts": {
+    "start": "node handler.js"
+  }
+}
