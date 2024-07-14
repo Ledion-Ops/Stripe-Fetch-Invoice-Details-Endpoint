@@ -2,6 +2,8 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event) => {
   const invoiceId = event.queryStringParameters.invoiceId;
+  console.log(invoiceId);
+  console.log(event.queryStringParameters);
 
   try {
     const invoice = await stripe.invoices.retrieve(invoiceId);
